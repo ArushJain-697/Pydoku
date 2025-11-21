@@ -64,5 +64,6 @@ While working on this project, we learned:
 
 ## How to Run the Game
 
-Install tabulate: pip install tabulate
-Run the file in your terminal: python Pydoku.py (make sure all the files are present where you need to 
+- Install tabulate: pip install tabulate
+- Run the file in your terminal: python Pydoku.py
+- Make sure all the files are present where you are running the file
