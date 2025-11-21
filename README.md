@@ -1,81 +1,68 @@
-###Pydoku
+# Pydoku
 
-A CLI-based Sudoku game written in Python.
-It uses the tabulate module to print a neat and readable Sudoku grid on the terminal.
+A CLI-based Sudoku game written in Python.  
+It uses the tabulate module to print a clean and readable Sudoku grid on the terminal.
 
-##Project Description
+## Project Description
 
-Pydoku is a command-line Sudoku game where the player chooses a difficulty level and solves the puzzle directly in the terminal.
-The project focuses on clean output formatting, simple logic, and an easy way for the player to enter moves.
+Pydoku is a command-line Sudoku game where the player chooses a difficulty level and solves the puzzle directly in the terminal.  
+The project focuses on clean output formatting, simple puzzle logic, and an easy way for the player to enter moves.
 
-##How the Game Works
-Choosing a Difficulty
+## How the Game Works
 
-When the program starts, it asks the player to pick a difficulty level:
+### Choosing a Difficulty
+When the program starts, it asks the player to select a difficulty level:
 
-Easy
+- Easy  
+- Medium  
+- Hard  
 
-Medium
+The difficulty level determines how many numbers are removed from the complete Sudoku grid.
 
-Hard
+### Making Moves
+After the grid is displayed, the player enters:
 
-The difficulty decides how many numbers are removed from the board.
+- Row  
+- Column  
+- Value  
 
-##Making Moves
+The board updates after each valid move.
 
-After the grid is shown, the player enters:
+## How We Generate the Sudoku Grid
 
-Row number
+### Step 1: Create a Full Solution
+A complete 9×9 Sudoku solution is generated.
 
-Column number
+### Step 2: Remove Numbers Based on Difficulty
+- Easy: fewer cells removed  
+- Medium: a moderate number removed  
+- Hard: many cells removed  
 
-Value to place
+These visible numbers form the puzzle given to the player.
 
-The board updates after every valid move.
+### Step 3: Display With Tabulate
+The tabulate module is used to show the grid with neat lines and spacing.
 
-##How We Generate the Sudoku Grid
-#Step 1: Create a Full Solution
+## Features
 
-We first generate a complete 9×9 Sudoku solution.
+- Command-line interface  
+- Three difficulty levels  
+- Cleanly formatted board using tabulate  
+- Input validation  
+- Random Sudoku puzzle generation  
 
-#Step 2: Remove Numbers Based on Difficulty
+## What We Learned
 
-Easy: fewer numbers removed
+While working on this project, we learned:
 
-Medium: moderate amount removed
+- How to work with nested lists  
+- How to generate and modify a Sudoku grid  
+- How to use tabulate for table formatting  
+- How to handle and validate user input  
+- How to structure functions and loops  
+- How to write cleaner Python code  
 
-Hard: many numbers removed
+## How to Run the Game
 
-Only these visible numbers are shown to the player.
-
-#Step 3: Display With Tabulate
-
-We use the tabulate module to print the Sudoku grid with clear lines and spacing.
-
-Features
-
-##CLI interface
-
-Three difficulty levels
-
-Nicely formatted board using tabulate
-
-Input validation
-
-Random puzzle generation
-
-##What We Learned
-
-During the project we learned:
-
-Working with nested lists
-
-Creating and modifying a Sudoku board
-
-Using tabulate for cleaner output
-
-Handling and validating user input
-
-Structuring functions and game loops
-
-Writing clearer Python code
+Install tabulate: pip install tabulate
+Run the file in your terminal: python Pydoku.py (make sure all the files are present where you need to 
