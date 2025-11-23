@@ -190,6 +190,10 @@ def play_game(initial_grid,solution):
             print("Move breaks Sudoku rules.")
             continue
 
+        if v!=solution[r][c]:
+            print("Wrong Answer")
+            continue
+        
         grid[r][c] = v
         display_sudoku(grid)
 
