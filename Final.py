@@ -182,15 +182,15 @@ def play_game(initial_grid,solution):
             print("Row/col must be 1-9, value must be 1-9.")
             continue
 
-        if initial_grid[r][c] != 0:
+        elif initial_grid[r][c] != 0:
             print("Cannot change a fixed cell.")
             continue
 
-        if not valid(grid, v,(r,c)):
+        elif not valid(grid, v,(r,c)):
             print("Move breaks Sudoku rules.")
             continue
 
-        if v!=solution[r][c]:
+        elif v!=solution[r][c]:
             print("Wrong Answer")
             continue
         
