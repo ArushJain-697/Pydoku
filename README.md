@@ -60,11 +60,10 @@ While working on this project, we learned:
 
 - How to work with nested lists
 - Backtracking algorithm
-- How to generate and modify a Sudoku grid  
-- How to use tabulate for table formatting  
-- How to handle and validate user input  
-- How to structure functions and loops  
-- How to write cleaner Python code  
+- How to generate and modify a Sudoku grid
+- How to use tabulate for table formatting
+- How to handle and validate user input
+- How to structure functions and loops
 
 ## How to Run the Game
 
