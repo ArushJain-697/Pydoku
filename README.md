@@ -35,7 +35,7 @@ The board updates after each valid move.
 
 ### Hint system
 
-- Player can use atmost 3 hints
+- Player can use atmost 5 hints
 - It fills the nearest empty cell to top left
 - Before that if it finds a wrongly filled cell then it gets corrected
 - If the user quits then solution is displayed and program stops running
